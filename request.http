@@ -1,0 +1,21 @@
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username": "tonymd"
+}
+
+################################
+
+POST http://localhost:4000/regentoken
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJUb255IE1EIiwiaWF0IjoxNjgyNjEwNDY4LCJleHAiOjE2ODI2MTQwNjh9.08EuRyBGQim5dULZwKjA-_6JAXLFzeugunr8iAGPyW8"
+}
+
+################################
+
+DELETE http://localhost:4000/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJUb255IE1EIiwiaWF0IjoxNjgyNjEyMjI2LCJleHAiOjE2ODI2MTI1MjZ9.53dCRqLl-mKombIjwRi8l-6YdemzP_9BOslgbbV6pe0
+

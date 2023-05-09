@@ -1,0 +1,49 @@
+# SampleAPIs Overview:
+- NodeJS server with authentication and some simple APIs feature 
+  - Connect to MongoDB
+  - Test API with Postman
+- Features:
+  - Authentication
+    - Login
+    - Signup
+    - Logout
+    - Re-generate access token
+  - Blogs
+    - get all blog
+    - get blog details (by slug)
+    - update blog (by slug, entire / portion)
+    - delete blog (by slug)
+## Libs:
+- dependencies:
+  - express
+  - mongoose
+  - mongoose-slug-updater
+  - dotenv
+  - jsonwebtoken
+- devDependencies:  
+  - nodemone
+## Folder-structure:
+  - src
+    - app
+      - controllers
+        - BlogsController.js
+        - UsersController.js
+      - middlewares
+        - auth.js
+      - models
+        - Blog.js
+        - User.js
+    - config
+      - db
+        - index.js
+    - public
+    - routes
+      - blogs.js
+      - users.js
+      - index.js
+    - servers
+      - authServer.js
+      - server.js
+    - utils
+      - authToken.js
+      - mongoose.js

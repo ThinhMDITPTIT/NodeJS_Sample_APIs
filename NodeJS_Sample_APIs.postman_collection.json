@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "26c3b3c3-730a-4099-8e34-4a4533ca9d97",
+		"name": "NodeJS_Sample_APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11430132"
+	},
+	"item": [
+		{
+			"name": "GET All Blogs stored",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0b255bWQiLCJ1c2VybmFtZSI6InRvbnltZCIsImlhdCI6MTY4MzU0MDg1OSwiZXhwIjoxNjgzNTQxMTU5fQ.r3pjLCVDC-pEhWeYcSFp3Nz_xoCYM7RNgjYUJc6xpxE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/blogs/stored",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"blogs",
+						"stored"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Blog detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/blogs/detail/blog-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"blogs",
+						"detail",
+						"blog-2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Blog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"blog 2\",\n    \"description\": \"des blog 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/blogs/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"blogs",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Blog (entire)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"blog 1\",\n    \"description\": \"des blog 1 ab\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/blogs/update/blog-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"blogs",
+						"update",
+						"blog-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Blog (description)",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"blog 1\",\n    \"description\": \"des blog 1 ab\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/blogs/update/blog-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"blogs",
+						"update",
+						"blog-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Blog",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/blogs/delete/blog-1-a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"blogs",
+						"delete",
+						"blog-1-a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User sign-up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"tonymd\",\n    \"password\": \"tonymd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/users/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"tonymd\",\n    \"password\": \"tonymd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Logout",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0b255bWQiLCJ1c2VybmFtZSI6InRvbnltZCIsImlhdCI6MTY4MzU0MDg1OSwiZXhwIjoxNjgzNTQxMTU5fQ.r3pjLCVDC-pEhWeYcSFp3Nz_xoCYM7RNgjYUJc6xpxE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/users/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User re-generate tokens",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"refreshToken\": \"yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0b255bWQiLCJ1c2VybmFtZSI6InRvbnltZCIsImlhdCI6MTY4MzU0MDMwOCwiZXhwIjoxNjgzNTQzOTA4fQ.NySsmYPkPzVi8JbAMGFTBSX97CqCV1Y8yKD27imPwOQ\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/users/regentoken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"regentoken"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
